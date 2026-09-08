@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A BABA DECORATION AND EVENT PLANNER | कानपुर के नं. 1 वेडिंग एवं इवेंट डेकोरेटर</title>
+  <meta name="description" content="A Baba Decoration and Event Planner, Kanpur. Royal Wedding Decor, Haldi-Mehendi, Mandap, Stage, Grand Entries, Lighting & Luxury Celebrations in Kanpur." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Rozha+One&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            champagne: {
+              50: '#FDFBF7', 100: '#FAF5EA', 200: '#F4E8D0', 300: '#EBD2A8',
+              400: '#DFB87A', 500: '#D09E51', 600: '#B57E37', 700: '#915E2A',
+              800: '#764B24', 900: '#4A2D13',
+            },
+            royalGold: {
+              500: '#C59A3F', 600: '#A87C29', 700: '#87601B',
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Cinzel', 'serif'],
+            hindi: ['Rozha One', 'serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Golden Ambient Fairy Lights Particle Canvas on Bright Ivory */
+    #fairy-lights-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* 3D Tilt Card Base with Soft Warm Sunlight Elevation */
+    .decor-3d-card {
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transition: transform 0.25s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.25s ease;
+      cursor: pointer;
+      position: relative;
+    }
+    .decor-3d-card:hover {
+      box-shadow: 0 25px 45px -10px rgba(181, 126, 55, 0.25);
+    }
+    .card-content-3d {
+      transform: translateZ(25px);
+      transition: transform 0.25s ease;
+    }
+
+    /* Hanging Lights Animation */
+    @keyframes swayLight {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+    }
+    .hanging-light {
+      transform-origin: top center;
+      animation: swayLight 4s ease-in-out infinite;
+    }
+
+    /* Shimmer Gold Heading Text */
+    .shimmer-gold {
+      background: linear-gradient(90deg, #915E2A 0%, #D09E51 25%, #764B24 50%, #D09E51 75%, #915E2A 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerText 6s linear infinite;
+    }
+    @keyframes shimmerText {
+      to { background-position: 200% center; }
+    }
+
+    /* Pulsing Glow */
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 4px 20px rgba(208, 158, 81, 0.35); }
+      50% { box-shadow: 0 8px 32px rgba(208, 158, 81, 0.65); }
+    }
+    .glow-pulse {
+      animation: pulseGlow 2.5s infinite;
+    }
+
+    /* Luxury Light Glassmorphism */
+    .glass-pearl {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(223, 184, 122, 0.4);
+    }
+    .glass-card {
+      background: #FFFFFF;
+      border: 1px solid #EFE4D2;
+      box-shadow: 0 12px 30px -8px rgba(145, 94, 42, 0.08);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #FAF5EA; }
+    ::-webkit-scrollbar-thumb { background: #D09E51; border-radius: 4px; }
+  </style>
+</head>
+
+<body class="bg-[#FCFAF6] text-slate-800 font-sans selection:bg-amber-200 selection:text-amber-950 relative overflow-x-hidden">
+
+  <!-- Interactive Golden Fairy Lights Particle Canvas -->
+  <canvas id="fairy-lights-canvas"></canvas>
+
+  <!-- Hanging Decorative Warm Fairy Lights SVG Strip at Top -->
+  <div class="fixed top-0 left-0 right-0 z-40 pointer-events-none flex justify-around opacity-90">
+    <div class="hanging-light text-amber-500 text-xs sm:text-base">💡✨</div>
+    <div class="hanging-light text-amber-600 text-xs sm:text-base" style="animation-delay: -1s;">✨💡</div>
+    <div class="hanging-light text-amber-500 text-xs sm:text-base" style="animation-delay: -2s;">💡✨</div>
+    <div class="hanging-light text-amber-600 text-xs sm:text-base" style="animation-delay: -0.5s;">✨💡</div>
+    <div class="hanging-light text-amber-500 text-xs sm:text-base" style="animation-delay: -1.5s;">💡✨</div>
+    <div class="hanging-light text-amber-600 text-xs sm:text-base" style="animation-delay: -2.5s;">✨💡</div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- TOP ANNOUNCEMENT BAR (BRIGHT LUXURY GOLD) -->
+  <!-- ======================================================= -->
+  <div class="relative z-30 bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 text-white py-1.5 px-4 text-center font-bold text-xs sm:text-sm tracking-wide shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <span class="hidden sm:inline font-mono">📍 कानपुर की प्रमुख शादियों व इवेंट्स का सबसे भरोसेमंद डेकोरेटर</span>
+      <span class="mx-auto sm:mx-0 flex items-center gap-1.5">
+        <span class="animate-ping inline-block h-2 w-2 rounded-full bg-white"></span>
+        <span>🔥 2026-2027 वेडिंग सीज़न बुकिंग्स जारी — अभी अपनी तारीख सुरक्षित करें!</span>
+      </span>
+      <a href="tel:7052842971" class="hidden md:inline-flex items-center gap-1 bg-white text-amber-900 px-3 py-0.5 rounded-full text-xs font-black hover:bg-amber-50 transition shadow">
+        📞 कॉल: 7052842971
+      </a>
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- HEADER & NAVIGATION (PEARL WHITE & GOLDEN BORDER) -->
+  <!-- ======================================================= -->
+  <header class="sticky top-0 z-40 glass-pearl border-b border-amber-200/70 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 via-amber-600 to-amber-800 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center text-amber-700 font-display font-black text-xl">
+            AB
+          </div>
+        </div>
+        <div>
+          <span class="font-display font-black text-lg sm:text-2xl tracking-wider text-slate-900 block leading-tight">
+            A BABA <span class="shimmer-gold">DECORATION</span>
+          </span>
+          <span class="text-[10px] sm:text-xs font-mono text-amber-800 tracking-widest uppercase block font-semibold">
+            & EVENT PLANNER • KANPUR
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="#portfolio" class="hover:text-amber-700 transition flex items-center gap-1">✨ 3D थीम्स गैलरी</a>
+        <a href="#services" class="hover:text-amber-700 transition">सर्विसिज़</a>
+        <a href="#estimator" class="hover:text-amber-700 text-amber-800 font-bold transition flex items-center gap-1">
+          <span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-xs border border-amber-300">कैलकुलेटर</span>
+          खर्च का अनुमान
+        </a>
+        <a href="#why-us" class="hover:text-amber-700 transition">हमारी खासियत</a>
+        <a href="#reviews" class="hover:text-amber-700 transition">समीक्षाएं</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- WhatsApp Quick -->
+        <a 
+          href="https://wa.me/917052842971?text=Hello%20A%20BABA%20Decoration%20Kanpur,%20I%20want%20to%20inquire%20about%20Event%20Decoration%20Booking." 
+          target="_blank"
+          class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-md transition transform hover:-translate-y-0.5"
+        >
+          <span>💬</span> <span>व्हाट्सएप</span>
+        </a>
+
+        <!-- Book Consultation Modal Button -->
+        <button 
+          onclick="openBookingModal()"
+          class="glow-pulse bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-xl shadow-md transition transform hover:scale-105"
+        >
+          तारीख चेक करें ➔
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================= -->
+  <!-- HERO SECTION (BRIGHT & ROYAL LIGHT ATMOSPHERE) -->
+  <!-- ======================================================= -->
+  <section class="relative min-h-[85vh] flex items-center justify-center pt-10 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-[#FFFDF8] via-[#FAF4E8] to-[#FCFAF6]">
+    
+    <!-- Warm luminous light halos in background -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] sm:w-[900px] h-[450px] bg-gradient-to-tr from-amber-200/40 via-orange-100/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-amber-100/50 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      
+      <!-- Top Kanpur Trust Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/95 border border-amber-300 text-amber-900 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+        <span class="text-base">👑</span>
+        <span>कानपुर का प्रतिष्ठित वेडिंग एवं भव्य स्टेज डेकोरेशन स्टूडियो</span>
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+        <span class="text-amber-800 font-bold">500+ भव्य शादियां संचालित</span>
+      </div>
+
+      <!-- Grand Main Title -->
+      <h1 class="font-display font-black text-3xl sm:text-5xl md:text-7xl leading-tight sm:leading-none text-slate-900 tracking-tight mb-6">
+        आपकी शादी और उत्सव को बनाएं <br>
+        <span class="shimmer-gold font-hindi text-4xl sm:text-6xl md:text-8xl">शाही और यादगार।</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="max-w-3xl mx-auto text-slate-700 text-base sm:text-xl font-normal leading-relaxed mb-10">
+        <strong class="text-amber-900 font-bold">A BABA DECORATION AND EVENT PLANNER</strong> कानपुर में भव्य शाही मंडप, हल्दी-मेहंदी बोहो कार्निवल, जयमाला स्टेज, कोल्ड पायरो एंट्रीज और जादुई 3D लाइटिंग का सबसे आधुनिक एवं विश्वसनीय नाम है।
+      </p>
+
+      <!-- Key Action CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        
+        <a 
+          href="#estimator" 
+          class="w-full sm:w-auto glow-pulse bg-gradient-to-r from-amber-600 via-amber-500 to-amber-700 text-white px-8 py-4 rounded-2xl font-bold text-base sm:text-lg flex items-center justify-center gap-3 shadow-xl hover:scale-105 transition-all"
+        >
+          <span>✨</span>
+          <span>तुरंत खर्च का अनुमान लगाएं (कैलकुलेटर)</span>
+          <span>➔</span>
+        </a>
+
+        <a 
+          href="#portfolio" 
+          class="w-full sm:w-auto bg-white hover:bg-amber-50 border border-amber-300 text-amber-950 px-7 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2.5 transition-all shadow-md hover:border-amber-400"
+        >
+          <span>📸</span>
+          <span>3D डेकोर थीम्स गैलरी देखें</span>
+        </a>
+
+        <a 
+          href="https://wa.me/917052842971?text=Hello%20A%20BABA%20Decoration%20Kanpur,%20I%20want%20a%20quotation%20for%20my%20event." 
+          target="_blank"
+          class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-7 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-700/20 transition-all hover:scale-105"
+        >
+          <span>💬</span>
+          <span>व्हाट्सएप पर बात करें</span>
+        </a>
+
+      </div>
+
+      <!-- Trust Metrics Cards Row (Bright White with Gold Accents) -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto text-left">
+        
+        <div class="glass-card rounded-2xl p-4 sm:p-5 border border-amber-200">
+          <div class="text-amber-700 text-2xl sm:text-3xl font-display font-black">500+</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">सफल शादियां व इवेंट्स</div>
+          <div class="text-[11px] text-slate-500 font-medium">कानपुर व आसपास के जनपदों में</div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 sm:p-5 border border-amber-200">
+          <div class="text-amber-700 text-2xl sm:text-3xl font-display font-black">100%</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">ऑन-टाइम रेडी सेटअप</div>
+          <div class="text-[11px] text-slate-500 font-medium">शून्य अंतिम समय का तनाव</div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 sm:p-5 border border-amber-200">
+          <div class="text-amber-700 text-2xl sm:text-3xl font-display font-black">3D CAD</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">थीम प्रीव्यू पहले दिखाएं</div>
+          <div class="text-[11px] text-slate-500 font-medium">जैसा देखेंगे, वैसा पाएंगे</div>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 sm:p-5 border border-amber-200">
+          <div class="text-amber-700 text-2xl sm:text-3xl font-display font-black">4.9 ★</div>
+          <div class="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">प्रीमियम ग्राहक रेटिंग</div>
+          <div class="text-[11px] text-slate-500 font-medium">सैकड़ों संतुष्ट परिवारों द्वारा</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- 3D INTERACTIVE THEMES PORTFOLIO (LIGHT LUXURY CARDS) -->
+  <!-- ======================================================= -->
+  <section id="portfolio" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 font-mono text-xs font-bold border border-amber-300 uppercase tracking-widest">
+        ✦ शाही डेकोरेशन पोर्टफोलियो ✦
+      </span>
+      <h2 class="font-display text-3xl sm:text-5xl font-black text-slate-900 mt-3 leading-tight">
+        कानपुर की सबसे चर्चित <br>
+        <span class="shimmer-gold">3D वेडिंग व इवेंट थीम्स</span>
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base mt-3 font-normal">
+        कार्ड्स पर माउस ले जाएं (Hover करें) या टच करें — सजीव 3D लाइटिंग और डीप एलीवेशन का अनुभव करें।
+      </p>
+    </div>
+
+    <!-- 6 Interactive 3D Tilt Cards Grid in Light Luxury Card Styling -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+      <!-- Card 1: Grand Royal Mandap -->
+      <div class="decor-3d-card rounded-3xl p-3.5 bg-white border border-amber-200 shadow-xl shadow-amber-900/5 group" data-tilt>
+        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-100">
+          <img 
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80" 
+            alt="Royal Mandap Decor Kanpur" 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          
+          <span class="absolute top-3 left-3 bg-white/95 text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-sm">
+            👑 शाही मंडप
+          </span>
+
+          <div class="absolute bottom-3 left-3 right-3 text-left">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-amber-300 font-bold block">Grand Varmala & Mandap</span>
+            <h3 class="font-display text-lg font-bold text-white leading-snug mt-0.5">
+              मुगल आर्किटेक्चर एवं क्रिस्टल झूमर मंडप
+            </h3>
+          </div>
+        </div>
+
+        <div class="card-content-3d p-3 text-left">
+          <p class="text-xs text-slate-600 font-normal leading-relaxed">
+            इंपोर्टेड ताज़ा गुलाब व कार्नेशन, 12-फीट भव्य गुंबद, और वार्म-व्हाइट कर्टन लाइटिंग से सुसज्जित।
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-amber-800">पैकेज: ₹45,000 से शुरू</span>
+            <button onclick="quickInquire('शाही मंडप')" class="text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-1.5 rounded-lg transition shadow-sm">
+              इनक्वायरी करें ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Haldi & Mehendi Boho Carnival -->
+      <div class="decor-3d-card rounded-3xl p-3.5 bg-white border border-amber-200 shadow-xl shadow-amber-900/5 group" data-tilt>
+        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-100">
+          <img 
+            src="https://images.unsplash.com/photo-1545232979-fbf68fe9c10d?auto=format&fit=crop&w=1000&q=80" 
+            alt="Haldi Mehendi Decor Kanpur" 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          
+          <span class="absolute top-3 left-3 bg-white/95 text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-sm">
+            🌼 हल्दी व मेहंदी कार्निवल
+          </span>
+
+          <div class="absolute bottom-3 left-3 right-3 text-left">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-amber-300 font-bold block">Sun-Kissed Bohemian Theme</span>
+            <h3 class="font-display text-lg font-bold text-white leading-snug mt-0.5">
+              गेंदा फूल, ट्रेडिशनल झूले व फोटोबूथ
+            </h3>
+          </div>
+        </div>
+
+        <div class="card-content-3d p-3 text-left">
+          <p class="text-xs text-slate-600 font-normal leading-relaxed">
+            कस्टमाइज्ड ओरिगामी छाते, राजस्थानी कलीरे, फ्लोटिंग वेसल्स और आकर्षक सेल्फी कॉर्नर्स।
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-amber-800">पैकेज: ₹25,000 से शुरू</span>
+            <button onclick="quickInquire('हल्दी-मेहंदी थीम')" class="text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-1.5 rounded-lg transition shadow-sm">
+              इनक्वायरी करें ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Reception & Sangeet Gala -->
+      <div class="decor-3d-card rounded-3xl p-3.5 bg-white border border-amber-200 shadow-xl shadow-amber-900/5 group" data-tilt>
+        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-100">
+          <img 
+            src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=80" 
+            alt="Reception Stage Decor Kanpur" 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          
+          <span class="absolute top-3 left-3 bg-white/95 text-purple-900 border border-purple-300 px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-sm">
+            🎵 संगीत व रिसेप्शन स्टेज
+          </span>
+
+          <div class="absolute bottom-3 left-3 right-3 text-left">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-purple-300 font-bold block">LED Wall & Concert Lighting</span>
+            <h3 class="font-display text-lg font-bold text-white leading-snug mt-0.5">
+              मूविंग हेड बीम लाइट्स व सिम्फनी स्टेज
+            </h3>
+          </div>
+        </div>
+
+        <div class="card-content-3d p-3 text-left">
+          <p class="text-xs text-slate-600 font-normal leading-relaxed">
+            कस्टम 4K LED स्क्रीन बैकड्रॉप, शार्पी बीम्स, डिस्को बीट्स और ग्लैम स्टेज रनवे सेटअप।
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-amber-800">पैकेज: ₹50,000 से शुरू</span>
+            <button onclick="quickInquire('संगीत व रिसेप्शन स्टेज')" class="text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-1.5 rounded-lg transition shadow-sm">
+              इनक्वायरी करें ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Ring Ceremony & Pastel Elegance -->
+      <div class="decor-3d-card rounded-3xl p-3.5 bg-white border border-amber-200 shadow-xl shadow-amber-900/5 group" data-tilt>
+        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-100">
+          <img 
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=80" 
+            alt="Engagement Ring Ceremony Decor Kanpur" 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          
+          <span class="absolute top-3 left-3 bg-white/95 text-rose-900 border border-rose-300 px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-sm">
+            💍 रिंग सेरेमनी & सगाई
+          </span>
+
+          <div class="absolute bottom-3 left-3 right-3 text-left">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-rose-300 font-bold block">Pastel & Neon Glow</span>
+            <h3 class="font-display text-lg font-bold text-white leading-snug mt-0.5">
+              पेस्टल फ्लोरल रिंग्स व नियॉन कोट्स
+            </h3>
+          </div>
+        </div>
+
+        <div class="card-content-3d p-3 text-left">
+          <p class="text-xs text-slate-600 font-normal leading-relaxed">
+            विंटेज कैंडल आइल्स, कस्टमाइज्ड कपल नियॉन नेम साइन, और मिनिमलिस्ट लग्जरी ड्रेपिंग।
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-amber-800">पैकेज: ₹35,000 से शुरू</span>
+            <button onclick="quickInquire('रिंग सेरेमनी')" class="text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-1.5 rounded-lg transition shadow-sm">
+              इनक्वायरी करें ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Grand Entry & Pyro Special FX -->
+      <div class="decor-3d-card rounded-3xl p-3.5 bg-white border border-amber-200 shadow-xl shadow-amber-900/5 group" data-tilt>
+        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-100">
+          <img 
+            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1000&q=80" 
+            alt="Cold Pyro Groom Bride Entry Kanpur" 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          
+          <span class="absolute top-3 left-3 bg-white/95 text-red-900 border border-red-300 px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-sm">
+            🎆 रॉयल एंट्री & पायरो FX
+          </span>
+
+          <div class="absolute bottom-3 left-3 right-3 text-left">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-red-300 font-bold block">Cold Pyro & Dry Ice Cloud</span>
+            <h3 class="font-display text-lg font-bold text-white leading-snug mt-0.5">
+              दूल्हा-दुल्हन की भव्य शाही एंट्री
+            </h3>
+          </div>
+        </div>
+
+        <div class="card-content-3d p-3 text-left">
+          <p class="text-xs text-slate-600 font-normal leading-relaxed">
+            धुआं रहित कोल्ड पायरो गन, बादलों जैसा ड्राई-आइस फॉग, हाइड्रोलिक रिवॉल्विंग स्टेज और फ्लावर शावर।
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-amber-800">पैकेज: ₹20,000 से शुरू</span>
+            <button onclick="quickInquire('रॉयल एंट्री एवं पायरो')" class="text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-1.5 rounded-lg transition shadow-sm">
+              इनक्वायरी करें ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Birthday, Anniversary & Theme Parties -->
+      <div class="decor-3d-card rounded-3xl p-3.5 bg-white border border-amber-200 shadow-xl shadow-amber-900/5 group" data-tilt>
+        <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-slate-100">
+          <img 
+            src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1000&q=80" 
+            alt="Birthday Anniversary Theme Party Kanpur" 
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+          
+          <span class="absolute top-3 left-3 bg-white/95 text-blue-900 border border-blue-300 px-3 py-1 rounded-full text-[11px] font-mono font-bold shadow-sm">
+            🎉 बर्थडे व थीम पार्टीज़
+          </span>
+
+          <div class="absolute bottom-3 left-3 right-3 text-left">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-cyan-300 font-bold block">Shimmer & Balloon Architecture</span>
+            <h3 class="font-display text-lg font-bold text-white leading-snug mt-0.5">
+              शिमर सीक्विन वॉल्स व 3D आर्चेस
+            </h3>
+          </div>
+        </div>
+
+        <div class="card-content-3d p-3 text-left">
+          <p class="text-xs text-slate-600 font-normal leading-relaxed">
+            गोल्डन शिमर वॉल, लाइटेड मार्की लेटर्स (Marquee Numbers), किड्स कार्टून थीम्स और कॉर्पोरेट बैंक्वेट सेटअप।
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-amber-800">पैकेज: ₹15,000 से शुरू</span>
+            <button onclick="quickInquire('बर्थडे व थीम पार्टी')" class="text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-1.5 rounded-lg transition shadow-sm">
+              इनक्वायरी करें ➔
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- INTERACTIVE LIVE EVENT BUDGET ESTIMATOR (LIGHT LUXURY) -->
+  <!-- ======================================================= -->
+  <section id="estimator" class="py-16 sm:py-20 relative z-20 bg-gradient-to-b from-transparent via-amber-50/50 to-transparent">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-amber-300 shadow-2xl shadow-amber-900/10 relative overflow-hidden">
+        
+        <!-- Background Warm Light Glow -->
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-amber-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 font-mono text-xs font-bold border border-amber-300">
+            ⚡ 1-क्लिक ऑटो कैलकुलेटर
+          </span>
+          <h2 class="font-display text-2xl sm:text-4xl font-black text-slate-900 mt-3 leading-tight">
+            अपने इवेंट के खर्च का <span class="shimmer-gold">तुरंत अनुमान लगाएं</span>
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2">
+            अपनी आवश्यकता अनुसार विकल्प चुनें — नीचे आपका कुल अनुमानित पैकेज तुरंत बनकर तैयार हो जाएगा।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          
+          <!-- Left: Selection Form Controls -->
+          <div class="md:col-span-7 space-y-5 text-left">
+            
+            <!-- Event Type -->
+            <div>
+              <label class="block text-xs font-mono uppercase text-amber-900 font-bold mb-1.5">
+                1. इवेंट का प्रकार चुनें (Event Type):
+              </label>
+              <select id="est-event" onchange="calculateBudget()" class="w-full bg-amber-50/60 border border-amber-200 text-slate-900 rounded-xl p-3 text-sm focus:outline-none focus:border-amber-500 font-medium">
+                <option value="45000" data-name="ग्रैंड वेडिंग (जयमाला + मंडप + स्टेज)">ग्रैंड वेडिंग (जयमाला + मंडप + स्टेज)</option>
+                <option value="25000" data-name="हल्दी व मेहंदी कार्निवल थीम">हल्दी व मेहंदी कार्निवल थीम</option>
+                <option value="35000" data-name="रिंग सेरेमनी व सगाई स्टेज">रिंग सेरेमनी व सगाई स्टेज</option>
+                <option value="50000" data-name="संगीत व रिसेप्शन कॉन्सर्ट स्टेज">संगीत व रिसेप्शन कॉन्सर्ट स्टेज</option>
+                <option value="15000" data-name="बर्थडे व एनिवर्सरी थीम पार्टी">बर्थडे व एनिवर्सरी थीम पार्टी</option>
+                <option value="75000" data-name="फुल वेडिंग कम्प्लीट पैकेज (ऑल-इन-वन)">फुल वेडिंग कम्प्लीट पैकेज (ऑल-इन-वन)</option>
+              </select>
+            </div>
+
+            <!-- Venue Scale -->
+            <div>
+              <label class="block text-xs font-mono uppercase text-amber-900 font-bold mb-1.5">
+                2. वेन्यू का आकार (Venue & Scale):
+              </label>
+              <select id="est-scale" onchange="calculateBudget()" class="w-full bg-amber-50/60 border border-amber-200 text-slate-900 rounded-xl p-3 text-sm focus:outline-none focus:border-amber-500 font-medium">
+                <option value="1.0" data-scale="स्टैंडर्ड बैंक्वेट हॉल / होम लॉन">स्टैंडर्ड बैंक्वेट हॉल / होम लॉन (200-400 मेहमान)</option>
+                <option value="1.35" data-scale="बड़ा वेडिंग लॉन / रिसॉर्ट">बड़ा वेडिंग लॉन / रिसॉर्ट (500-1000 मेहमान)</option>
+                <option value="0.75" data-scale="इंटिमेट / फैमिली होम सेटअप">इंटिमेट / फैमिली होम सेटअप (50-150 मेहमान)</option>
+              </select>
+            </div>
+
+            <!-- Add-on Luxuries -->
+            <div>
+              <label class="block text-xs font-mono uppercase text-amber-900 font-bold mb-2">
+                3. स्पेशल इफेक्ट्स व प्रीमियम ऐड-ऑन्स जोड़ें:
+              </label>
+              
+              <div class="space-y-2.5">
+                <label class="flex items-center gap-3 p-3 rounded-xl bg-amber-50/50 border border-amber-200 hover:border-amber-400 cursor-pointer transition">
+                  <input type="checkbox" id="add-pyro" value="8000" onchange="calculateBudget()" class="accent-amber-600 w-4 h-4" checked>
+                  <span class="text-xs sm:text-sm text-slate-800 font-medium flex-1">🎆 कोल्ड पायरो एंट्री + ड्राई-आइस फॉग क्लाउड (+₹8,000)</span>
+                </label>
+
+                <label class="flex items-center gap-3 p-3 rounded-xl bg-amber-50/50 border border-amber-200 hover:border-amber-400 cursor-pointer transition">
+                  <input type="checkbox" id="add-fresh" value="12000" onchange="calculateBudget()" class="accent-amber-600 w-4 h-4">
+                  <span class="text-xs sm:text-sm text-slate-800 font-medium flex-1">🌸 100% ओरिजिनल इंपोर्टेड फ्रेश फ्लावर्स अपग्रेड (+₹12,000)</span>
+                </label>
+
+                <label class="flex items-center gap-3 p-3 rounded-xl bg-amber-50/50 border border-amber-200 hover:border-amber-400 cursor-pointer transition">
+                  <input type="checkbox" id="add-led" value="15000" onchange="calculateBudget()" class="accent-amber-600 w-4 h-4">
+                  <span class="text-xs sm:text-sm text-slate-800 font-medium flex-1">📺 4K LED स्क्रीन विजुअल वॉल + मूविंग हेड्स (+₹15,000)</span>
+                </label>
+
+                <label class="flex items-center gap-3 p-3 rounded-xl bg-amber-50/50 border border-amber-200 hover:border-amber-400 cursor-pointer transition">
+                  <input type="checkbox" id="add-entry" value="6000" onchange="calculateBudget()" class="accent-amber-600 w-4 h-4">
+                  <span class="text-xs sm:text-sm text-slate-800 font-medium flex-1">👑 दुल्हन की विंटेज पालकी / दूल्हे की एंट्री टनल (+₹6,000)</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Live Estimated Quote Card (Gold Bordered Pearl Card) -->
+          <div class="md:col-span-5 bg-gradient-to-b from-amber-50 to-[#FFFDF9] rounded-2xl p-6 border-2 border-amber-400 text-center shadow-lg relative">
+            
+            <span class="text-[11px] font-mono text-amber-800 uppercase tracking-widest block font-bold">
+              ESTIMATED PACKAGE
+            </span>
+
+            <div class="my-4">
+              <span class="text-xs text-slate-500">अनुमानित कुल लागत:</span>
+              <div id="est-total-price" class="text-4xl sm:text-5xl font-display font-black text-amber-700 my-1">
+                ₹53,000*
+              </div>
+              <span class="text-[10px] text-slate-500 block">*कानपुर शहर सीमा में ट्रांसपोर्ट व सेटअप शामिल</span>
+            </div>
+
+            <!-- Breakdown Summary Box -->
+            <div class="bg-white rounded-xl p-3.5 border border-amber-200 text-left space-y-1.5 text-xs text-slate-700 my-4 shadow-sm">
+              <div class="flex justify-between font-bold text-slate-900">
+                <span id="sum-event">ग्रैंड वेडिंग स्टेज</span>
+                <span id="sum-base">₹45,000</span>
+              </div>
+              <div class="flex justify-between text-slate-500 text-[11px]">
+                <span>वेन्यू स्केल मल्टीप्लायर:</span>
+                <span id="sum-scale">1.0x</span>
+              </div>
+              <div class="flex justify-between text-emerald-700 font-bold text-[11px]">
+                <span>स्पेशल ऐड-ऑन्स:</span>
+                <span id="sum-addons">+₹8,000</span>
+              </div>
+            </div>
+
+            <!-- WhatsApp Quotation Direct CTA -->
+            <button 
+              onclick="sendWhatsAppQuotation()" 
+              class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition transform hover:scale-102"
+            >
+              <span>💬</span>
+              <span>यह कोटेशन व्हाट्सएप पर भेजें</span>
+            </button>
+
+            <p class="text-[10px] text-slate-500 mt-3">
+              1-क्लिक में आपके चुने हुए विकल्पों के साथ व्हाट्सएप चैट खुल जाएगी।
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- WHY CHOOSE A BABA DECORATION (LIGHT LUXURY) -->
+  <!-- ======================================================= -->
+  <section id="why-us" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 font-mono text-xs font-bold border border-amber-300 uppercase tracking-widest">
+        ✦ हमारी विश्वसनीयता ✦
+      </span>
+      <h2 class="font-display text-3xl sm:text-5xl font-black text-slate-900 mt-3 leading-tight">
+        कानपुर के परिवार क्यों चुनते हैं <br>
+        <span class="shimmer-gold">A BABA DECORATION?</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-left">
+      
+      <!-- Feature 1 -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-amber-200 hover:border-amber-400 transition hover:shadow-lg">
+        <div class="w-14 h-14 rounded-2xl bg-amber-100 border border-amber-300 flex items-center justify-center text-3xl mb-5 shadow-sm">
+          📐
+        </div>
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">
+          3D कंप्यूटर डिज़ाइन प्रीव्यू
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
+          हम हवा में वादे नहीं करते! इवेंट से पहले आपको 3D CAD व कलर पैलेट डिज़ाइन दिखाते हैं ताकि आपको ठीक-ठीक पता हो कि आपका स्टेज कैसा दिखेगा।
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-amber-200 hover:border-amber-400 transition hover:shadow-lg">
+        <div class="w-14 h-14 rounded-2xl bg-amber-100 border border-amber-300 flex items-center justify-center text-3xl mb-5 shadow-sm">
+          ⏰
+        </div>
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">
+          समय से 2 घंटे पहले रेडी सेटअप
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
+          शादी के दिन मेहमानों के आने से 2 घंटे पहले पूरा स्टेज व लाइटिंग चालू होकर तैयार रहता है — शून्य देरी, पूरा सुकून।
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-amber-200 hover:border-amber-400 transition hover:shadow-lg">
+        <div class="w-14 h-14 rounded-2xl bg-amber-100 border border-amber-300 flex items-center justify-center text-3xl mb-5 shadow-sm">
+          💰
+        </div>
+        <h3 class="font-display text-xl font-bold text-slate-900 mb-2">
+          सीधा इन-हाउस सामान (नो बिचौलिया)
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
+          हमारे पास स्वयं के ट्रस, शार्पी लाइट्स, फ्लावर वेयरहाउस और स्ट्रक्चर्स हैं। कोई थर्ड-पार्टी कमीशन नहीं, कानपुर में सबसे किफायती दरें।
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Kanpur Top Venues Banner -->
+    <div class="mt-12 bg-white rounded-2xl p-4 sm:p-6 border border-amber-200 text-center shadow-sm">
+      <span class="text-xs font-mono uppercase text-amber-900 font-bold tracking-wider block mb-2">
+        कानपुर के सभी प्रमुख होटल्स, क्लब्स और लॉन्स में कार्य का अनुभव:
+      </span>
+      <p class="text-xs sm:text-sm text-slate-600 font-medium">
+        Ganges Club • Status Club • The Landmark Hotel • Royal Cliff • Brij Rasoi • Cawnpore Club • Green Park Lawns • VIP Road Banquets • Swaroop Nagar • Kalyanpur • Kidwai Nagar
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- KANPUR CLIENT TESTIMONIALS (LIGHT ELEGANCE) -->
+  <!-- ======================================================= -->
+  <section id="reviews" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 font-mono text-xs font-bold border border-amber-300 uppercase tracking-widest">
+        ✦ संतुष्ट ग्राहक ✦
+      </span>
+      <h2 class="font-display text-3xl sm:text-4xl font-black text-slate-900 mt-3">
+        कानपुर के परिवारों का <span class="shimmer-gold">सच्चा अनुभव</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+      
+      <!-- Review 1 -->
+      <div class="glass-card rounded-2xl p-6 border border-amber-200 shadow-sm">
+        <div class="flex items-center text-amber-500 text-sm mb-3">★★★★★</div>
+        <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+          "हमने स्वरूप नगर में बेटी की शादी के लिए जयमाला और मंडप का काम A Baba Decoration को दिया था। जैसा 3D डिज़ाइन में दिखाया था, हूबहू वैसा ही रॉयल लुक दिया। सब मेहमानों ने बहुत तारीफ की!"
+        </p>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="font-bold text-slate-900">राजेश अग्निहोत्री</span>
+          <span class="text-amber-800 font-mono font-bold">स्वरूप नगर, कानपुर</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="glass-card rounded-2xl p-6 border border-amber-200 shadow-sm">
+        <div class="flex items-center text-amber-500 text-sm mb-3">★★★★★</div>
+        <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+          "हल्दी और संगीत का पूरा बोहो और नियॉन थीम सेटअप बहुत शानदार था। कोल्ड पायरो एंट्री और ड्राई-आइस फॉग से शादी की तस्वीरें सिनेमैटिक मूवी जैसी आईं। बहुत प्रोफेशनल टीम है!"
+        </p>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="font-bold text-slate-900">अमित & साक्षी कटियार</span>
+          <span class="text-amber-800 font-mono font-bold">किदवई नगर, कानपुर</span>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="glass-card rounded-2xl p-6 border border-amber-200 shadow-sm">
+        <div class="flex items-center text-amber-500 text-sm mb-3">★★★★★</div>
+        <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+          "किफायती बजट में इतना प्रीमियम काम पूरे कानपुर में शायद ही कोई करे। कोई छिपा हुआ चार्ज नहीं और समय से पहले सब तैयार कर दिया। 100% रेकमेंडेड!"
+        </p>
+        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+          <span class="font-bold text-slate-900">डॉ. वी. के. शुक्ला</span>
+          <span class="text-amber-800 font-mono font-bold">सिविल लाइंस, कानपुर</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- FOOTER & CONTACT SECTION (CLEAN IVORY & GOLD) -->
+  <!-- ======================================================= -->
+  <footer class="border-t border-amber-200 bg-[#F7F2E7] pt-16 pb-24 sm:pb-16 relative z-20 text-slate-600 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+      
+      <!-- Studio Intro -->
+      <div class="md:col-span-5 text-left space-y-3">
+        <span class="font-display font-black text-xl sm:text-2xl text-slate-900 block">
+          A BABA <span class="shimmer-gold">DECORATION</span>
+        </span>
+        <p class="text-slate-600 font-normal leading-relaxed max-w-sm">
+          कानपुर का अग्रणी वेडिंग, स्टेज व इवेंट प्लानिंग स्टूडियो। आपकी खुशियों के हर पल को शाही अंदाज और आधुनिक तकनीक से सजाना हमारा संकल्प है।
+        </p>
+        <div class="pt-2 text-amber-900 font-mono font-bold">
+          📍 कानपुर, उत्तर प्रदेश (ऑल कानपुर सर्विस)
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="md:col-span-3 text-left space-y-2">
+        <h4 class="font-mono uppercase text-slate-900 font-bold text-xs tracking-wider mb-3">प्रमुख सेवाएं</h4>
+        <p>• ग्रैंड वेडिंग मंडप व जयमाला</p>
+        <p>• हल्दी-मेहंदी कार्निवल थीम</p>
+        <p>• 4K LED स्क्रीन व कॉन्सर्ट लाइटिंग</p>
+        <p>• कोल्ड पायरो व स्पेशल एंट्री FX</p>
+        <p>• बर्थडे व कॉर्पोरेट इवेंट्स</p>
+      </div>
+
+      <!-- Contact Direct -->
+      <div class="md:col-span-4 text-left space-y-3 bg-white p-5 rounded-2xl border border-amber-200 shadow-sm">
+        <h4 class="font-mono uppercase text-amber-900 font-bold text-xs tracking-wider">सीधा संपर्क एवं बुकिंग</h4>
+        <div class="text-slate-900 font-black text-xl">
+          📞 <a href="tel:7052842971" class="hover:text-amber-700">+91 70528 42971</a>
+        </div>
+        <p class="text-slate-600">
+          WhatsApp: <a href="https://wa.me/917052842971" target="_blank" class="text-emerald-700 font-bold underline">7052842971 पर चैट करें</a>
+        </div>
+        <p class="text-[11px] text-slate-500">
+          समय: सुबह 9:00 बजे से रात्रि 10:00 बजे तक (सप्ताह के सातों दिन खुली)
+        </p>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 border-t border-amber-200/60 pt-6 text-center text-[11px] text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p>© 2026 A BABA DECORATION AND EVENT PLANNER, KANPUR. सर्वाधिकार सुरक्षित।</p>
+      <p>Designed with High-Speed 3D Animated Technology for Instant Client Conversions.</p>
+    </div>
+  </footer>
+
+  <!-- ======================================================= -->
+  <!-- MOBILE STICKY BOTTOM ACTION BAR -->
+  <!-- ======================================================= -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-amber-200 p-2.5 sm:hidden flex items-center justify-between gap-2 shadow-2xl">
+    
+    <a 
+      href="tel:7052842971" 
+      class="flex-1 bg-amber-50 border border-amber-300 text-amber-900 py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm"
+    >
+      <span>📞</span> <span>कॉल करें</span>
+    </a>
+
+    <a 
+      href="https://wa.me/917052842971?text=Hello%20A%20BABA%20Decoration%20Kanpur,%20I%20want%20to%20inquire%20about%20event%20booking." 
+      target="_blank"
+      class="flex-1 bg-emerald-600 text-white py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 shadow-md"
+    >
+      <span>💬</span> <span>व्हाट्सएप</span>
+    </a>
+
+    <button 
+      onclick="openBookingModal()"
+      class="flex-1 bg-gradient-to-r from-amber-500 to-amber-600 text-white py-2.5 px-3 rounded-xl font-bold text-xs flex items-center justify-center gap-1 shadow-md"
+    >
+      <span>📅</span> <span>बुक करें</span>
+    </button>
+
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- DATE BOOKING / INQUIRY MODAL (LIGHT THEME) -->
+  <!-- ======================================================= -->
+  <div id="booking-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white border-2 border-amber-300 rounded-3xl p-6 sm:p-8 max-w-lg w-full text-left relative shadow-2xl">
+      
+      <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-2xl font-bold">
+        ✕
+      </button>
+
+      <span class="text-xs font-mono uppercase text-amber-800 font-bold tracking-widest block mb-1">
+        A BABA DECORATION • KANPUR
+      </span>
+      <h3 class="font-display text-2xl font-bold text-slate-900 mb-4">
+        इवेंट तारीख व इनक्वायरी दर्ज करें
+      </h3>
+
+      <form onsubmit="handleBookingSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+        <div>
+          <label class="block text-slate-700 font-bold mb-1">आपका नाम (Your Name):</label>
+          <input type="text" id="bk-name" required placeholder="उदा. राहुल यादव" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:border-amber-500 font-medium" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-slate-700 font-bold mb-1">मोबाइल नंबर (Phone):</label>
+            <input type="tel" id="bk-phone" required placeholder="7052842971" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:border-amber-500 font-medium" />
+          </div>
+          <div>
+            <label class="block text-slate-700 font-bold mb-1">इवेंट तारीख (Date):</label>
+            <input type="date" id="bk-date" required class="w-full bg-amber-50/50 border border-amber-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:border-amber-500 font-medium" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-slate-700 font-bold mb-1">इवेंट का प्रकार (Type):</label>
+          <select id="bk-type" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:border-amber-500 font-medium">
+            <option>ग्रैंड वेडिंग (जयमाला + मंडप)</option>
+            <option>हल्दी व मेहंदी कार्निवल</option>
+            <option>रिंग सेरेमनी / सगाई</option>
+            <option>रिसेप्शन व संगीत नाइट</option>
+            <option>बर्थडे / एनिवर्सरी पार्टी</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-slate-700 font-bold mb-1">कानपुर में वेन्यू / लॉन का नाम:</label>
+          <input type="text" id="bk-venue" placeholder="उदा. स्वरूप नगर / गंगा बैराज लॉन" class="w-full bg-amber-50/50 border border-amber-200 rounded-xl p-3 text-slate-900 focus:outline-none focus:border-amber-500 font-medium" />
+        </div>
+
+        <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-bold py-3.5 rounded-xl shadow-lg transition transform hover:scale-102 mt-2">
+          व्हाट्सएप पर इनक्वायरी सबमिट करें ➔
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+  <!-- ======================================================= -->
+  <script>
+    // -------------------------------------------------------------
+    // 1. FAIRY LIGHTS & STARDUST CANVAS ENGINE (GOLDEN PARTICLES ON LIGHT BG)
+    // -------------------------------------------------------------
+    (function initFairyLights() {
+      const canvas = document.getElementById('fairy-lights-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let w, h;
+      let particles = [];
+      const particleCount = 45;
+
+      function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          r: Math.random() * 2.5 + 1.0,
+          alpha: Math.random() * 0.7 + 0.3,
+          speedY: Math.random() * 0.45 + 0.2,
+          pulseSpeed: Math.random() * 0.03 + 0.015,
+          color: Math.random() > 0.4 ? '#D09E51' : '#B57E37'
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        for (let p of particles) {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = (Math.sin(Date.now() * p.pulseSpeed) + 1.2) * 0.4 * p.alpha;
+          ctx.shadowBlur = 10;
+          ctx.shadowColor = '#DFB87A';
+          ctx.fill();
+
+          p.y -= p.speedY;
+          if (p.y < -10) {
+            p.y = h + 10;
+            p.x = Math.random() * w;
+          }
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+
+    // -------------------------------------------------------------
+    // 2. 3D CARD TILT ON MOUSEMOVE
+    // -------------------------------------------------------------
+    (function init3DTilt() {
+      const cards = document.querySelectorAll('.decor-3d-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -8;
+          const rotateY = ((x - centerX) / centerX) * 8;
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+        });
+      });
+    })();
+
+    // -------------------------------------------------------------
+    // 3. EVENT BUDGET CALCULATOR
+    // -------------------------------------------------------------
+    window.calculateBudget = function() {
+      const eventSelect = document.getElementById('est-event');
+      const scaleSelect = document.getElementById('est-scale');
+      if (!eventSelect || !scaleSelect) return;
+
+      const baseVal = parseFloat(eventSelect.value) || 45000;
+      const eventName = eventSelect.options[eventSelect.selectedIndex].getAttribute('data-name');
+      const scaleMultiplier = parseFloat(scaleSelect.value) || 1.0;
+
+      let addonsTotal = 0;
+      if (document.getElementById('add-pyro').checked) addonsTotal += 8000;
+      if (document.getElementById('add-fresh').checked) addonsTotal += 12000;
+      if (document.getElementById('add-led').checked) addonsTotal += 15000;
+      if (document.getElementById('add-entry').checked) addonsTotal += 6000;
+
+      const finalTotal = Math.round((baseVal * scaleMultiplier) + addonsTotal);
+
+      document.getElementById('est-total-price').innerText = '₹' + finalTotal.toLocaleString('en-IN') + '*';
+      document.getElementById('sum-event').innerText = eventName;
+      document.getElementById('sum-base').innerText = '₹' + baseVal.toLocaleString('en-IN');
+      document.getElementById('sum-scale').innerText = scaleMultiplier + 'x';
+      document.getElementById('sum-addons').innerText = '+₹' + addonsTotal.toLocaleString('en-IN');
+    };
+
+    window.sendWhatsAppQuotation = function() {
+      const eventSelect = document.getElementById('est-event');
+      const scaleSelect = document.getElementById('est-scale');
+      const eventName = eventSelect.options[eventSelect.selectedIndex].getAttribute('data-name');
+      const scaleName = scaleSelect.options[scaleSelect.selectedIndex].getAttribute('data-scale');
+      const price = document.getElementById('est-total-price').innerText;
+
+      let addons = [];
+      if (document.getElementById('add-pyro').checked) addons.push('कोल्ड पायरो + ड्राई-आइस फॉग');
+      if (document.getElementById('add-fresh').checked) addons.push('100% ओरिजिनल फ्रेश फ्लावर्स');
+      if (document.getElementById('add-led').checked) addons.push('4K LED स्क्रीन वॉल');
+      if (document.getElementById('add-entry').checked) addons.push('विंटेज पालकी / टनल एंट्री');
+
+      var lines = [
+        '*नमस्ते A BABA DECORATION AND EVENT PLANNER, KANPUR!*',
+        '',
+        'मुझे अपनी इवेंट डेकोरेशन के लिए कोटेशन चाहिए:',
+        '• इवेंट प्रकार: ' + eventName,
+        '• वेन्यू व स्केल: ' + scaleName,
+        '• चुने गए ऐड-ऑन्स: ' + (addons.length > 0 ? addons.join(', ') : 'कोई नहीं'),
+        '• अनुमानित बजट: ' + price,
+        '',
+        'कृपया मुझे इस पैकेज की विस्तृत जानकारी व उपलब्ध तारीखें बताएं।'
+      ];
+      var msg = encodeURIComponent(lines.join('\n'));
+      window.open('https://wa.me/917052842971?text=' + msg, '_blank');
+    };
+
+    window.quickInquire = function(themeName) {
+      const msg = encodeURIComponent(
+        'नमस्ते A BABA DECORATION KANPUR, मैं आपके "' + themeName + '" पैकेज के बारे में जानकारी चाहता हूँ। कृपया विवरण शेयर करें।'
+      );
+      window.open('https://wa.me/917052842971?text=' + msg, '_blank');
+    };
+
+    // -------------------------------------------------------------
+    // 4. MODAL LOGIC
+    // -------------------------------------------------------------
+    window.openBookingModal = function() {
+      const m = document.getElementById('booking-modal');
+      if (m) {
+        m.classList.remove('hidden');
+        m.classList.add('flex');
+      }
+    };
+    window.closeBookingModal = function() {
+      const m = document.getElementById('booking-modal');
+      if (m) {
+        m.classList.add('hidden');
+        m.classList.remove('flex');
+      }
+    };
+
+    window.handleBookingSubmit = function(e) {
+      e.preventDefault();
+      const name = document.getElementById('bk-name').value;
+      const phone = document.getElementById('bk-phone').value;
+      const date = document.getElementById('bk-date').value;
+      const type = document.getElementById('bk-type').value;
+      const venue = document.getElementById('bk-venue').value || 'कानपुर';
+
+      var lines = [
+        '*नई इवेंट बुकिंग इनक्वायरी - A BABA DECORATION KANPUR*',
+        '',
+        '• नाम: ' + name,
+        '• मोबाइल: ' + phone,
+        '• तारीख: ' + date,
+        '• इवेंट: ' + type,
+        '• वेन्यू: ' + venue
+      ];
+      var msg = encodeURIComponent(lines.join('\n'));
+      window.open('https://wa.me/917052842971?text=' + msg, '_blank');
+      closeBookingModal();
+    };
+
+    // Calculate on load
+    document.addEventListener('DOMContentLoaded', calculateBudget);
+  </script>
+</body>
+</html>
